@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Course Reviews</h2>
+    <!--Will display a link for submitting, deleting, and indexing -->
+    <h3>Submit a review <a href="{{ url_for('submit') }}">here</a></h3>
+    <h3>Delete a review <a href="{{ url_for('delete') }}">here</a></h3>
+    <h3>Display all reviews <a href="{{ url_for('index') }}">here</a></h3>
+{% endblock %}

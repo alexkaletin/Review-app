@@ -1,0 +1,7 @@
+wheel
+flask
+gunicorn
+google-cloud-datastore
+google-cloud-translate
+rsa
+requests_oauthlib

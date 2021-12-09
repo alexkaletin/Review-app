@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>These are all the course reviews</h2>
+    <br></br>
+    <!--will loop through all the entries and displays -->
+    <h3>Entries</h3>
+    {% for entry in entries %}
+        <p class=entry>
+	Department: {{ entry.department }} &emsp; Course Number: {{ entry.courseNum }} 
+	<br>Instructor: {{entry.instructor}} 
+	<br>            {{ entry.quarter}} {{ entry.year}}
+	<br>Review: {{ entry.review }}
+	<br>Translated review: {{entry.translated}}</br>
+        </p>
+    {% endfor %}
+
+{% endblock %}
